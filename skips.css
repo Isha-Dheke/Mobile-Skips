@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat, Helvetica, Arial, Lucida, sans-serif;
+}
+h2{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-weight: 500;
+    font-size: 18px;
+}
+.view-mobile{
+    display: none;
+}
+.section_skipHire{
+    padding-bottom: 27px;
+}
+.section_skipHire .skipHire_header h2{
+    margin-bottom: 49px;
+}
+.section_skipHire .skipHire_header img {
+    max-width: 680px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.section_skipHire .skipHire_header .mobile-compare{
+    display: none;
+}
+.section_skipHire .skipHire_header .view-mobile{
+    display: none;
+}
+
+/* Ready to book section */
+.section_readytobook {
+    border: 1px solid #ccc;
+    background-color: #108140!important;
+    padding-top: 27px;
+    position: relative;
+    max-width: 100%;
+}
+
+.section_readytobook::before {
+    content: "";
+    position: absolute;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgxOCwyNywzMywwLjA0KSIgaGVpZ2h0PSI4cHgiIHdpZHRoPSI4cHgiIHZpZXdCb3g9IjAgMCA4IDgiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQiIGhlaWdodD0iNCIvPjwvc3ZnPg==); 
+    background-repeat: repeat;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   
+}
+.page-container{
+    position: relative;
+    z-index: 1;
+}
+.section_readytobook .section-readytobook-content{
+    margin:  -32px auto -4px auto;
+    display: flex;
+    gap: 59.3906px;
+    justify-content: center;
+    
+}
+.section_readytobook .section-readytobook-content .readytobook-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section_readytobook .readytobook-image img{
+    max-width: 510.297px;
+    margin-left: 20px;
+}
+
+.section_readytobook .readytobook-text h2{
+text-align: start;
+color: rgb(209, 223, 88);
+font-weight: 800;
+line-height: 27.2px;
+padding-bottom: 0.5em;
+}
+.section_readytobook .readytobook-text p{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 21px;
+    }
+.section_readytobook .ready-getstarted{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.section_readytobook .readytobook-text .ready-getstarted{
+    max-width: 100%;
+}
+.section_readytobook .readytobook-text .ready-getstarted input{
+  border: none;
+  font-size: 16px;
+  margin-left: 14px;
+  background: transparent;
+}
+.section_readytobook .readytobook-text .ready-getstarted input::placeholder{
+    color: white;
+  }
+.section_readytobook .readytobook-text .ready-getstarted a{
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+    padding: 6px 12px;
+    text-align: center;
+    z-index: 2;
+    width: 11.5em;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Our delivery location */
+.section_delivery{
+    padding-top: 54px;
+}
+.section_delivery .section-delivery-header{
+    padding: 27px 0px;
+}
+.section_delivery .section-delivery-header h2{
+    color: #81a740;
+    line-height: 1em;
+    padding-bottom: 10px;
+    font-size: 26px;
+    margin-bottom:16px ;
+}
+.section_delivery .section-delivery-header p{
+    text-align: center;
+    color: #121b21;
+    line-height: 1.7em;
+    padding-bottom: 18px;
+}
+
+.section_delivery .section-delivery-header p .delivery_service{
+   font-weight: 700;
+}
+
+.section_delivery .section-delivery-content{
+    padding: 27px 0px;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    gap: 108px;
+}
+
+.section_delivery .section-delivery-content ul li{
+    color:rgb(129, 168, 64) ;
+    font-size: 16px;
+    font-family:Montserrat, Helvetica, Arial, Lucida, sans-serif ;
+    text-decoration: underline;
+    line-height: 26px;
+    font-weight: 500;
+}
+.section_delivery .section-delivery-content ul li::marker{
+    color: black;
+}
+.section_delivery .section-delivery-content .location_btn a{
+    border-radius: 38px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px 12px;
+  
+}
+.section_delivery .section-delivery-content .location_btn{
+    margin-top: 15px;
+}
+.section_readytobook .readytobook-text .view-desktop {
+    display: block;
+}
+.section_readytobook .readytobook-text .view-mobile{
+    display: none;
+}
+
+/* Media query  */
+
+@media only screen and (max-width: 575px){
+  /* Second Section */
+    .section_skipHire .skipHire_header h2{
+        max-width: 80%;
+        margin: 0 auto;
+    } 
+    .section_readytobook .section-readytobook-content{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 60px;
+        
+    }
+    .section_readytobook .readytobook-text .view-desktop {
+        display: none;
+    }
+    .section_readytobook .readytobook-text .view-mobile{
+        display: block;
+    }
+    .section_readytobook::before {
+        content: "";
+        position: absolute;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgxOCwyNywzMywwLjA0KSIgaGVpZ2h0PSI4cHgiIHdpZHRoPSI4cHgiIHZpZXdCb3g9IjAgMCA4IDgiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQiIGhlaWdodD0iNCIvPjwvc3ZnPg==); 
+        background-repeat: repeat;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       z-index: 100;
+    }
+    .section_readytobook .readytobook-image img {
+        max-width: 90%;
+        position: relative;
+        
+    }
+    .section_readytobook .readytobook-text p{
+        text-align: center;
+    }
+    .section_readytobook .section-readytobook-content .readytobook-text::before{
+        content: "";
+        display: inline-block;
+        width: 150px;
+        height: 34px; 
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwcHgiIGhlaWdodD0iMTQwcHgiIHZpZXdCb3g9IjAgMCAxNjAgMTQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkEiPjxwYXRoIGQ9Ik04MCAwTDAgMTQwaDE2MHoiLz48L2c+PC9zdmc+');
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        margin:  -56px auto 20px auto;
+        
+    }
+    .section_readytobook .readytobook-text .ready-getstarted{
+        max-width: 78%;
+        margin: 29px auto 0px auto;
+    }
+    .section_readytobook .readytobook-text .ready-getstarted input{
+        max-width: 34%;
+      }
+      .section_readytobook .ready-getstarted{
+        border: 2px solid rgb(208, 222, 88) ;
+    }
+    .section_readytobook .readytobook-text .ready-getstarted a{
+        font-size: 1em;
+        padding: 14px 34px;
+        background-color: rgb(208, 222, 88);
+    }
+
+
+    /* Third Secrion */
+    .section_delivery .section-delivery-header h2{
+        max-width: 60%;
+        margin:  0 auto;
+        padding-bottom: 10px;
+        color: rgb(129, 167, 64);
+    }
+   
+}
+
+@media only screen and (max-width: 767px) { 
+    .view-mobile{
+        display: block;
+    }
+    .view-desktop{
+        display: none;
+    }
+    /* First Section */
+    .section_skipHire .skipHire_header h2{
+        line-height :49.6px; 
+        font-weight: 800;
+        font-size: 32px;
+        margin-bottom: 0px;
+        
+    } 
+    .section_skipHire .skipHire_header .mobile-compare{
+        display: block;
+        max-width: 66%;
+    }
+    .section_skipHire .skipHire_header .view-mobile{
+        display: block;
+        max-width:100% ;
+        
+    }
+    .section_skipHire .skipHire_header .view-desktop{
+        display: none;
+    }
+    .section_skipHire .skipHire_header h2 .content-h2-skip{
+        color: rgb(129, 168, 64);
+    }
+    .section_skipHire .skipHire_header h2 .content-h2-ticks{
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .section_readytobook .readytobook-text h2{
+        text-align: center;
+        font-weight: 800;
+        line-height: 27.2px;
+        padding-bottom: 0.5em;
+        }
+
+    /* Third Section */
+    .section_delivery .section-delivery-header p{
+        max-width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .section_delivery .section-delivery-content{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+    }
+    .section_delivery .section-delivery-content ul{
+        padding: 0px;
+    }
+    .section_delivery .section-delivery-content ul li{
+        padding-bottom: 16px;
+        display: flex;
+        margin: 0 auto;
+       justify-content: center;
+    }
+    .section_delivery .section-delivery-content .location_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 991px) and (min-width:576px){
+        
+    /* SecondSection */
+    .section_readytobook .readytobook-text .view-desktop {
+        display: none;
+    }
+    .section_readytobook .readytobook-text .view-mobile{
+        display: block;
+    }
+    .section_readytobook .readytobook-image img{
+        position: relative;
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    .section_readytobook .section-readytobook-content .readytobook-text{
+        position: absolute;
+        top: 40px;
+        margin: 0 auto;
+    }
+    .section_delivery .section-delivery-header p{
+        max-width:80% ;
+        margin: 0 auto;
+        line-height: 30.6px;
+    }
+    .section_delivery .section-delivery-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin:0px 80px ;
+       gap: 40px
+    }
+    
+.section_readytobook .readytobook-text h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section_readytobook .section-readytobook-content .readytobook-text::before{
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 52px; 
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwcHgiIGhlaWdodD0iMTQwcHgiIHZpZXdCb3g9IjAgMCAxNjAgMTQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkEiPjxwYXRoIGQ9Ik04MCAwTDAgMTQwaDE2MHoiLz48L2c+PC9zdmc+');
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+   margin:  -48px auto 0px auto;
+}
+
+.section_readytobook .ready-getstarted{
+    border: 2px solid rgb(208, 222, 88) ;
+}
+.section_readytobook .readytobook-text .ready-getstarted a{
+    font-size: 1em;
+    padding: 14px 34px;
+    background-color: rgb(208, 222, 88);
+}
+}
+@media only screen and (min-width: 991px) and (max-width:1024px){
+    .section_readytobook .readytobook-text .ready-getstarted a{
+        padding: 12px 22px;
+    }
+    .section_delivery .section-delivery-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}@media only screen and (max-width: 1300px) and (min-width:1024px){
+    .section_delivery .section-delivery-content{
+        display: flex;
+        gap: 30px;
+        margin: 0px 100px;
+        text-decoration: underline;
+        /* line-height: 4px; */
+
+    }
+    .section_delivery .section-delivery-content .location_btn{
+        padding: 6px 20px;
+        text-align: center;
+    }
+  .section_delivery .section-delivery-content .location_btn a {
+    display: inline-block;
+    line-height: 34px;
+}
+}

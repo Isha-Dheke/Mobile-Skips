@@ -56,7 +56,7 @@ p{
 }
 .page-container{
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 .section_readytobook .section-readytobook-content{
     margin:  -32px auto -4px auto;
@@ -122,6 +122,10 @@ padding-bottom: 0.5em;
     align-items: center;
     justify-content: center;
 }
+.section_readytobook .readytobook-text .ready-getstarted a:hover{
+   background-color: #d1df58;
+}
+
 
 
 /* Our delivery location */
@@ -154,11 +158,11 @@ padding-bottom: 0.5em;
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-    gap: 108px;
+    gap: 92px;
 }
 
 .section_delivery .section-delivery-content ul li{
-    color:rgb(129, 168, 64) ;
+    color: #81a840;
     font-size: 16px;
     font-family:Montserrat, Helvetica, Arial, Lucida, sans-serif ;
     text-decoration: underline;
@@ -168,19 +172,67 @@ padding-bottom: 0.5em;
 .section_delivery .section-delivery-content ul li::marker{
     color: black;
 }
+.section_delivery .section-delivery-content .location_btn{
+    margin-top: 20px;
+}
 .section_delivery .section-delivery-content .location_btn a{
-    border-radius: 38px;
+border-radius: 38px;
   color: white;
   background-color: black;
-  border: 1px solid black;
+  padding: 12px 20px;
+    line-height: 1.7em !important;
   font-size: 20px;
   font-weight: 700;
-  padding: 6px 12px;
+  position: relative;
+  border: 2px solid white;
+  outline: none;
   
 }
-.section_delivery .section-delivery-content .location_btn{
-    margin-top: 15px;
-}
+.section_delivery .section-delivery-content .location_btn a::after{
+    content: "";
+    filter: brightness(0) invert(1);
+    background-image: url(image/arrow.png);
+    position: absolute;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    margin-left: -1em;
+    opacity: 0%;
+    }
+    .section_delivery .section-delivery-content .location_btn a:hover{
+        text-decoration: none;
+        animation: 0.5s ease-in-out locationBtn forwards;
+    }
+    .section_delivery .section-delivery-content .location_btn a:hover::after{
+        animation: 0.5s ease-in-out locationBtn-after forwards;
+    }
+    @keyframes locationBtn-after {
+        from{
+                margin-left: -1em;
+                opacity: 0%;
+            
+        }
+        to{
+            
+                margin-left: .6em;
+                opacity: 100%;
+
+
+        }
+    }
+    @keyframes locationBtn{
+        from{
+            padding-left: 24px;
+            padding-right: 24px;
+            border-color: white;
+        }
+        to{
+            padding-left: 18px;
+            padding-right: 38px;
+            border-color: black;
+        }
+    }
 .section_readytobook .readytobook-text .view-desktop {
     display: block;
 }
@@ -217,12 +269,10 @@ padding-bottom: 0.5em;
        bottom: 0;
        left: 0;
        right: 0;
-       z-index: 100;
     }
     .section_readytobook .readytobook-image img {
         max-width: 90%;
         position: relative;
-        
     }
     .section_readytobook .readytobook-text p{
         text-align: center;
@@ -352,6 +402,7 @@ padding-bottom: 0.5em;
         position: relative;
         max-width: 90%;
         margin-top: 20px;
+       
     }
     .section_readytobook .section-readytobook-content .readytobook-text{
         position: absolute;
@@ -395,21 +446,28 @@ padding-bottom: 0.5em;
     background-color: rgb(208, 222, 88);
 }
 }
-@media only screen and (min-width: 991px) and (max-width:1024px){
+@media only screen and (min-width: 991px) and (max-width:1025px){
     .section_readytobook .readytobook-text .ready-getstarted a{
         padding: 12px 22px;
+    }
+    .section_readytobook .section-readytobook-content .readytobook-text{
+        max-width: 380.641px;
+        margin-top: 140px;
+    }
+    .section_readytobook .readytobook-image img{
+        max-width: 380.641px;
+        margin-bottom: 40px;
     }
     .section_delivery .section-delivery-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-}@media only screen and (max-width: 1300px) and (min-width:1024px){
+}@media only screen and (max-width: 1300px) and (min-width:1025px){
     .section_delivery .section-delivery-content{
         display: flex;
         gap: 30px;
         margin: 0px 100px;
         text-decoration: underline;
-        /* line-height: 4px; */
 
     }
     .section_delivery .section-delivery-content .location_btn{
@@ -421,3 +479,4 @@ padding-bottom: 0.5em;
     line-height: 34px;
 }
 }
+

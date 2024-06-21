@@ -189,13 +189,9 @@ border-radius: 38px;
   
 }
 .section_delivery .section-delivery-content .location_btn a::after{
-    content: "";
-    filter: brightness(0) invert(1);
-    background-image: url(image/arrow.png);
+    font-family: 'ElegantIcons';
+    content: "\35";
     position: absolute;
-    top: 16px;
-    width: 18px;
-    height: 18px;
     background-repeat: no-repeat;
     margin-left: -1em;
     opacity: 0%;

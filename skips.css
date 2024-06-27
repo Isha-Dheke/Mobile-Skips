@@ -30,6 +30,39 @@ p{
 .section_skipHire .skipHire_header .mobile-compare{
     display: none;
 }
+
+.section_skipHire .skip-Content table{
+    max-width: 130%;
+    margin: 0 auto;
+}
+.section_skipHire .skip-Content table tr td:first-child{
+    padding-right: 90px;
+}
+.section_skipHire .skip-Content table tr th:first-child {
+    font-size: 20px;
+    padding-left: 140px;
+}
+.section_skipHire .skip-Content table tr th:nth-child(2) {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.section_skipHire .skip-Content table tr th:nth-child(3) {
+    font-size: 20px;
+    padding-left: 60px;
+}
+.section_skipHire .skip-Content table tr td:nth-child(3) {
+    padding-left: 60px;
+}
+
+.section_skipHire .skip-Content table tr td{
+ font-family: Montserrat, Helvetica, Arial, Lucida, sans-serif;
+   font-size: 20px;    
+   font-weight: bold; 
+   padding: 12px;
+}
+
 .section_skipHire .skipHire_header .view-mobile{
     display: none;
 }
@@ -239,6 +272,38 @@ border-radius: 38px;
 /* Media query  */
 
 @media only screen and (max-width: 575px){
+    .section_skipHire .skip-Content table{
+        margin: 0 auto;
+    }
+    /* First Section */
+    .section_skipHire .skip-Content table tr th:nth-child(3) {
+        display: none;
+    }
+    .section_skipHire .skip-Content table tr th:nth-child(2) img{
+      height: 38px;
+      width: 84px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .section_skipHire .skip-Content table tr td:nth-child(3) {
+        display: none;
+    }
+    
+    .section_skipHire .skip-Content table tr td{
+          font-size: 15px;
+          padding: 10px;
+       }
+       .section_skipHire .skip-Content table tr td:first-child {
+        padding-right: 6px;
+    }
+    .section_skipHire .skip-Content table tr td:nth-child(2) img{
+       height: 30px !important;
+       width: 30px !important;
+    }
+
+
+
+
   /* Second Section */
     .section_skipHire .skipHire_header h2{
         max-width: 80%;
@@ -319,6 +384,7 @@ border-radius: 38px;
         display: none;
     }
     /* First Section */
+    
     .section_skipHire .skipHire_header h2{
         line-height :49.6px; 
         font-weight: 800;

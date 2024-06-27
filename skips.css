@@ -278,7 +278,7 @@ border-radius: 38px;
     /* First Section */
     .skip-Content{
         overflow-x: auto; 
-        margin-left: 50px;
+        padding: 30px;
         }
     .section_skipHire .skip-Content table tr th:nth-child(2) img{
       height: 38px;
